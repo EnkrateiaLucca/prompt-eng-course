@@ -106,10 +106,6 @@ The repository includes several Jupyter notebooks demonstrating various aspects 
 
 Feel free to submit issues and enhancement requests.
 
-## License
-
-Please refer to the LICENSE file in the repository.
-
 ## References
 
 For additional resources on prompt engineering, refer to:

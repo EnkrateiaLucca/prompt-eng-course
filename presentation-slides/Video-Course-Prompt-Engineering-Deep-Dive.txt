@@ -1,0 +1,968 @@
+1 / 132
+
+Table of Contents
+Modules
+1. Introduction to Prompt Engineering
+
+2 / 132
+
+Table of Contents
+Modules
+1. Introduction to Prompt Engineering
+2. Prompt Engineering Techniques
+
+3 / 132
+
+Table of Contents
+Modules
+1. Introduction to Prompt Engineering
+2. Prompt Engineering Techniques
+3. Prompt Engineering Experiments
+
+4 / 132
+
+Module #1
+Introduction to Prompt Engineering
+
+5 / 132
+
+What is Prompt Engineering?
+
+6 / 132
+
+What is Prompt Engineering?
+Prompt engineering: Discipline for engineering prompts
+
+7 / 132
+
+What is Prompt Engineering?
+Prompt engineering: Discipline for engineering prompts
+The goal is to design good prompts
+
+8 / 132
+
+What is Prompt Engineering?
+Prompt engineering: Discipline for engineering prompts
+The goal is to design good prompts
+Process for developing prompts that yield high performance in a task.
+
+9 / 132
+
+Why Prompt Engineering?
+
+10 / 132
+
+Why Prompt Engineering?
+LLM's outputs are uncertain
+
+11 / 132
+
+Why Prompt Engineering?
+LLM's outputs are uncertain
+We need a systematic approach for searching solutions to problems
+
+12 / 132
+
+What is a Prompt?
+
+13 / 132
+
+What is a Prompt?
+Prompt is text that conveys the user's intention to the LLM.
+
+14 / 132
+
+What is a Prompt?
+Prompt is text that conveys the user's intention to the LLM.
+It can be a question, an instruction, request.
+
+15 / 132
+
+Prompt Basics
+Components of the prompt
+
+16 / 132
+
+Prompt Basics
+Components of the prompt: instruction
+
+17 / 132
+
+Prompt Basics
+Components of the prompt: instruction, context
+
+18 / 132
+
+Prompt Basics
+Components of the prompt: instruction, context input
+data
+
+19 / 132
+
+Prompt Basics
+Components of the prompt: instruction, context input
+data , output indicator
+
+20 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+
+21 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 1: Write clear instructions
+
+22 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 1: Write clear instructions
+Bad: Who’s president?
+
+23 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 1: Write clear instructions
+Bad: Who’s president?
+Better: Who was the president of Mexico in 2021?
+[3]OpenAI's Prompt Engineering Guide
+
+24 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 2: Provide reference text
+
+25 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 2: Provide reference text
+
+[3]OpenAI's Prompt Engineering Guide
+
+26 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 3: Break tasks into subtasks
+
+27 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 3: Break tasks into subtasks
+
+[3]OpenAI's Prompt Engineering Guide
+
+28 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 4: Give the model time to think
+
+29 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 4: Give the model time to think
+
+30 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 5: Use external tools
+
+31 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 5: Use external tools
+
+[3]OpenAI's Prompt Engineering Guide
+
+32 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 6: Test changes systematically
+
+33 / 132
+
+Prompt Engineering Guide
+OpenAI's Guide for Building Good Prompts
+Strategy 6: Test changes systematically
+
+[3]OpenAI's Prompt Engineering Guide
+
+34 / 132
+
+Prompt Engineering Template
+Define Your Task Clearly
+Define the Eval Metric
+Generate Candidate Prompts
+Experiment
+Learning When to Stop Experimenting
+
+35 / 132
+
+Define Your Task Clearly
+
+36 / 132
+
+Define Your Task Clearly
+Clear and concise
+
+37 / 132
+
+Define Your Task Clearly
+Clear and concise
+Progress should be measurable
+
+38 / 132
+
+Define Your Task Clearly
+Clear and concise
+Progress should be measurable
+Settle on scope and constraints
+
+39 / 132
+
+Define Your Task Clearly
+Clear and concise
+Progress should be measurable
+Settle on scope and constraints
+Settle on your audience
+
+40 / 132
+
+Define Your Task Clearly
+Clear and concise
+Progress should be measurable
+Settle on scope and constraints
+Settle on your audience
+
+Examples
+Bad: Summarize this paper
+
+41 / 132
+
+Define Your Task Clearly
+Clear and concise
+Progress should be measurable
+Settle on scope and constraints
+Settle on your audience
+
+Examples
+Bad: Summarize this paper
+Good: Summarize the main contributions of this paper in bullet points for
+a non-technical audience.
+
+42 / 132
+
+Define the Eval Metric
+
+43 / 132
+
+Define the Eval Metric
+Establish criteria for evaluating the effectiveness of your prompts.
+
+44 / 132
+
+Define the Eval Metric
+Establish criteria for evaluating the effectiveness of your prompts.
+What should I take into account when evaluating a prompt?
+
+45 / 132
+
+Define the Eval Metric
+Establish criteria for evaluating the effectiveness of your prompts.
+What should I take into account when evaluating a prompt?
+This could include accuracy, creativity, relevance, or other metrics
+pertinent to your task.
+
+46 / 132
+
+Define the Eval Metric
+Establish criteria for evaluating the effectiveness of your prompts.
+What should I take into account when evaluating a prompt?
+This could include accuracy, creativity, relevance, or other metrics
+pertinent to your task.
+Problem: classifying emails into urgent and not urgent
+
+47 / 132
+
+Define the Eval Metric
+Establish criteria for evaluating the effectiveness of your prompts.
+What should I take into account when evaluating a prompt?
+This could include accuracy, creativity, relevance, or other metrics
+pertinent to your task.
+Problem: classifying emails into urgent and not urgent
+Metric: Accuracy
+
+48 / 132
+
+Generate Candidate Prompts
+
+49 / 132
+
+Generate Candidate Prompts
+Diverse set of prompts
+
+50 / 132
+
+Generate Candidate Prompts
+Diverse set of prompts
+Aiming for variety & creativity
+
+51 / 132
+
+Generate Candidate Prompts
+Diverse set of prompts
+Aiming for variety & creativity
+Keep them as short as possible without losing information
+
+52 / 132
+
+Experiment
+
+53 / 132
+
+Experiment
+Test: Run your candidate prompts through the intended system.
+
+54 / 132
+
+Experiment
+Test: Run your candidate prompts through the intended system.
+Evaluate: Assess the outputs based on your defined evaluation metrics.
+
+55 / 132
+
+Experiment
+Test: Run your candidate prompts through the intended system.
+Evaluate: Assess the outputs based on your defined evaluation metrics.
+Compare: Analyze the performance of each prompt against others.
+
+56 / 132
+
+Experiment
+Test: Run your candidate prompts through the intended system.
+Evaluate: Assess the outputs based on your defined evaluation metrics.
+Compare: Analyze the performance of each prompt against others.
+Best Candidate: Determine which prompt(s) best fulfill your task
+requirements.
+
+57 / 132
+
+Experiment
+Test: Run your candidate prompts through the intended system.
+Evaluate: Assess the outputs based on your defined evaluation metrics.
+Compare: Analyze the performance of each prompt against others.
+Best Candidate: Determine which prompt(s) best fulfill your task
+requirements.
+Tip: Utilize tools like Google Sheets for organized experimentation and
+tracking.
+
+58 / 132
+
+Learning When to Stop Experimenting
+
+59 / 132
+
+Learning When to Stop Experimenting
+Recognize the balance between thorough experimentation and practical
+limitations.
+
+60 / 132
+
+Learning When to Stop Experimenting
+Recognize the balance between thorough experimentation and practical
+limitations.
+Consider factors like:
+
+61 / 132
+
+Learning When to Stop Experimenting
+Recognize the balance between thorough experimentation and practical
+limitations.
+Consider factors like:
+Token/Cost: The expense associated with processing each prompt.
+
+62 / 132
+
+Learning When to Stop Experimenting
+Recognize the balance between thorough experimentation and practical
+limitations.
+Consider factors like:
+Token/Cost: The expense associated with processing each prompt.
+Time/Urgency/Priority: Available time and the urgency of the task.
+
+63 / 132
+
+Learning When to Stop Experimenting
+Recognize the balance between thorough experimentation and practical
+limitations.
+Consider factors like:
+Token/Cost: The expense associated with processing each prompt.
+Time/Urgency/Priority: Available time and the urgency of the task.
+Aim to avoid overengineering, as it can reduce the reusability and
+practicality of your solutions.
+
+64 / 132
+
+Summary
+Prompt Engineering is the discipline for engineering prompts
+Prompt Engineering aims to design prompts that yield high performance
+across tasks.
+OpenAI's Guide for Building Good Prompts includes strategies like
+writing clear instructions, providing reference text, breaking tasks into
+subtasks, giving the model time to think, using external tools, and testing
+changes systematically.
+Prompt Engineering Template: task, metric, candidates, experiment
+
+65 / 132
+
+Module #2
+Prompt Engineering Techniques
+
+66 / 132
+
+Prompt Engineering Techniques
+Zero Shot Prompting
+Few-shot Prompting
+Chain-of-Thought (CoT)
+Self-Consistency
+Knowledge Generation
+Tree of Thoughts (ToT)
+
+67 / 132
+
+Zero Shot Prompting
+
+68 / 132
+
+Zero Shot Prompting
+Zero-shot prompting is when you solve the task without showing any
+examples of what a solution might look like
+
+69 / 132
+
+Zero Shot Prompting
+Zero-shot prompting is when you solve the task without showing any
+examples of what a solution might look like
+One can use this as the first try at a model to see what kind of tasks LLM
+can already solve out of the box
+
+70 / 132
+
+Zero Shot Prompting
+Zero-shot prompting is when you solve the task without showing any
+examples of what a solution might look like
+One can use this as the first try at a model to see what kind of tasks LLM
+can already solve out of the box
+Classify the sentiment in this sentence as negative or positive: Text: I will go
+to a vacation. Sentiment:
+
+71 / 132
+
+Few-Shot
+
+72 / 132
+
+Few-Shot
+Few-shot Prompting: technique where you show a few examples of what a
+solution might look like.
+
+73 / 132
+
+Few-Shot
+Few-shot Prompting: technique where you show a few examples of what a
+solution might look like.
+Translate from English to French:
+- I am a student --> Je suis un étudiant
+- I am a teacher --> Je suis un professeur
+- I am a doctor -->
+
+74 / 132
+
+Few-Shot
+Few-shot Prompting: technique where you show a few examples of what a
+solution might look like.
+Translate from English to French:
+- I am a student --> Je suis un étudiant
+- I am a teacher --> Je suis un professeur
+- I am a doctor -->
+Example taken from (Brown et al. 2020)
+
+75 / 132
+
+Chain-of-Thought
+
+76 / 132
+
+Chain-of-Thought
+Chain-of-thought (CoT) enables complex reasoning capabilities through
+intermediate reasoning steps (Wei et al. 2022).
+
+77 / 132
+
+Chain-of-Thought
+Chain-of-thought (CoT) enables complex reasoning capabilities through
+intermediate reasoning steps (Wei et al. 2022).
+Q: I have one sister and one brother. I am 20 years of age. My sister
+is 5 years older and my brother 2 years younger than my sister. How old
+is my brother?
+
+78 / 132
+
+Chain-of-Thought
+Chain-of-thought (CoT) enables complex reasoning capabilities through
+intermediate reasoning steps (Wei et al. 2022).
+Q: I have one sister and one brother. I am 20 years of age. My sister
+is 5 years older and my brother 2 years younger than my sister. How old
+is my brother?
+A: If I am 20 years of age and my sister is 5 years older, my sister
+is 20+5=25 years old. If my brother is 2 years younger than my sister,
+my brother is 25-2=23 years old. The answer is 23 years old.
+
+79 / 132
+
+Chain-of-Thought
+Chain-of-thought (CoT) enables complex reasoning capabilities through
+intermediate reasoning steps (Wei et al. 2022).
+Q: I have one sister and one brother. I am 20 years of age. My sister
+is 5 years older and my brother 2 years younger than my sister. How old
+is my brother?
+A: If I am 20 years of age and my sister is 5 years older, my sister
+is 20+5=25 years old. If my brother is 2 years younger than my sister,
+my brother is 25-2=23 years old. The answer is 23 years old.
+Q: I have 2 friends, Jack and Sally. Jack is 2 years older than Sally. Sally is
+5 years younger than me. I am 17 years old. How old is Jack?
+
+80 / 132
+
+Self-Consistency
+
+81 / 132
+
+Self-Consistency
+
+82 / 132
+
+Knowledge Generation
+
+83 / 132
+
+Knowledge Generation
+Knowledge Generation: Generating facts related to the question.
+
+84 / 132
+
+Knowledge Generation
+Knowledge Generation: Generating facts related to the question.
+Knowledge Integration: Using generated facts to answer the question.
+
+85 / 132
+
+Knowledge Generation
+Knowledge Generation: Generating facts related to the question.
+Knowledge Integration: Using generated facts to answer the question.
+
+86 / 132
+
+Techniques
+There are many more prompt engineering techniques that grow in
+complexity, such as:
+ToT (Yao et al. 2023)
+Retrieval Augmented Generation (Lewis et el. (2021))
+Automatic Prompt Engineer (Zhou et al., (2022))
+React Prompting (Yao et al., 2022)
+Graph Prompting (Liu et al., 2023)
+Skeleton of Thought (Ning et al. 2023)
+Step Back Prompting (Zheng et al. 2023)
+
+87 / 132
+
+Summary
+Zero-shot prompting: solve tasks without examples
+Few-shot prompting: show a few examples of what a solution might look
+like
+Chain-of-Thought: enables complex reasoning capabilities through
+intermediate reasoning steps
+Self-Consistency: ensures that the model's outputs are consistent with the
+input
+Knowledge Generation: generating facts related to the question
+There are many more prompt engineering techniques that grow in
+complexity
+
+88 / 132
+
+Module #3
+Prompt Engineering Experiments
+
+89 / 132
+
+Designing Prompt Engineering Experiments
+
+90 / 132
+
+Designing Prompt Engineering Experiments
+Evolving the Prompt Engineering Template
+Task, metric, candidates, experiment, iterate
+
+91 / 132
+
+Designing Prompt Engineering Experiments
+Evolving the Prompt Engineering Template
+Task, metric, candidates, experiment, iterate
+Systematic approach
+Task specification strategies
+
+92 / 132
+
+Designing Prompt Engineering Experiments
+Evolving the Prompt Engineering Template
+Task, metric, candidates, experiment, iterate
+Systematic approach
+Task specification strategies
+Strategies for defining metrics
+
+93 / 132
+
+Designing Prompt Engineering Experiments
+Evolving the Prompt Engineering Template
+Task, metric, candidates, experiment, iterate
+Systematic approach
+Task specification strategies
+Strategies for defining metrics
+Strategies for prompt candidates generation
+
+94 / 132
+
+Designing Prompt Engineering Experiments
+Evolving the Prompt Engineering Template
+Task, metric, candidates, experiment, iterate
+Systematic approach
+Task specification strategies
+Strategies for defining metrics
+Strategies for prompt candidates generation
+Strategies for experimentation
+
+95 / 132
+
+Task Specification Strategies
+Writing prompts constrains continuation to task completion
+
+96 / 132
+
+Task Specification Strategies
+Writing prompts constrains continuation to task completion
+Few-shot and 0-shot: key jargon in prompt programming
+
+97 / 132
+
+Task Specification Strategies
+Writing prompts constrains continuation to task completion
+Few-shot and 0-shot: key jargon in prompt programming
+0-shot prompts split into direct and proxy specifications
+
+98 / 132
+
+Task Specification Strategies
+Writing prompts constrains continuation to task completion
+Few-shot and 0-shot: key jargon in prompt programming
+0-shot prompts split into direct and proxy specifications
+Direct: Tells the model to perform a known task or construct a task from
+known components
+
+99 / 132
+
+Task Specification Strategies
+Writing prompts constrains continuation to task completion
+Few-shot and 0-shot: key jargon in prompt programming
+0-shot prompts split into direct and proxy specifications
+Direct: Tells the model to perform a known task or construct a task from
+known components
+Signifiers in direct specification key intended behavior without explicit
+instruction
+
+100 / 132
+
+Task Specification Strategies
+Writing prompts constrains continuation to task completion
+Few-shot and 0-shot: key jargon in prompt programming
+0-shot prompts split into direct and proxy specifications
+Direct: Tells the model to perform a known task or construct a task from
+known components
+Signifiers in direct specification key intended behavior without explicit
+instruction
+By proxy: Uses analogies or characters as proxies for complex or nuanced
+intentions
+
+101 / 132
+
+Task Specification Strategies
+Writing prompts constrains continuation to task completion
+Few-shot and 0-shot: key jargon in prompt programming
+0-shot prompts split into direct and proxy specifications
+Direct: Tells the model to perform a known task or construct a task from
+known components
+Signifiers in direct specification key intended behavior without explicit
+instruction
+By proxy: Uses analogies or characters as proxies for complex or nuanced
+intentions
+Specification by proxy keys behaviors from cultural consciousness rather
+than direct naming
+
+102 / 132
+
+Task Specification Strategies
+Writing prompts constrains continuation to task completion
+Few-shot and 0-shot: key jargon in prompt programming
+0-shot prompts split into direct and proxy specifications
+Direct: Tells the model to perform a known task or construct a task from
+known components
+Signifiers in direct specification key intended behavior without explicit
+instruction
+By proxy: Uses analogies or characters as proxies for complex or nuanced
+intentions
+Specification by proxy keys behaviors from cultural consciousness rather
+than direct naming
+By demonstration (n-shot): Effective for tasks requiring specific formats
+or instructive examples
+103 / 132
+
+Task Specification Strategies
+Writing prompts constrains continuation to task completion
+Few-shot and 0-shot: key jargon in prompt programming
+0-shot prompts split into direct and proxy specifications
+Direct: Tells the model to perform a known task or construct a task from
+known components
+Signifiers in direct specification key intended behavior without explicit
+instruction
+By proxy: Uses analogies or characters as proxies for complex or nuanced
+intentions
+Specification by proxy keys behaviors from cultural consciousness rather
+than direct naming
+By demonstration (n-shot): Effective for tasks requiring specific formats
+or instructive examples
+Constraining behavior to guide models towards intended continuations
+and avoid ambiguity
+104 / 132
+
+Strategies for defining metrics
+
+105 / 132
+
+Strategies for defining metrics
+Clear objective
+
+106 / 132
+
+Strategies for defining metrics
+Clear objective
+Understand and define the task unambiguously
+
+107 / 132
+
+Strategies for defining metrics
+Clear objective
+Understand and define the task unambiguously
+Specify criteria
+
+108 / 132
+
+Strategies for defining metrics
+Clear objective
+Understand and define the task unambiguously
+Specify criteria
+Relevance, creativity, accuracy, fluency, coherence, etc.
+
+109 / 132
+
+Strategies for defining metrics
+Clear objective
+Understand and define the task unambiguously
+Specify criteria
+Relevance, creativity, accuracy, fluency, coherence, etc.
+Measurable outcomes
+
+110 / 132
+
+Strategies for defining metrics
+Clear objective
+Understand and define the task unambiguously
+Specify criteria
+Relevance, creativity, accuracy, fluency, coherence, etc.
+Measurable outcomes
+Progress should be clearly measurable
+
+111 / 132
+
+Strategies for defining metrics
+Clear objective
+Understand and define the task unambiguously
+Specify criteria
+Relevance, creativity, accuracy, fluency, coherence, etc.
+Measurable outcomes
+Progress should be clearly measurable
+Systematic evaluation
+
+112 / 132
+
+Strategies for defining metrics
+Clear objective
+Understand and define the task unambiguously
+Specify criteria
+Relevance, creativity, accuracy, fluency, coherence, etc.
+Measurable outcomes
+Progress should be clearly measurable
+Systematic evaluation
+Review Relevant Metrics: BLEU, ROUGE, METEOR, etc.
+
+113 / 132
+
+Strategies for defining metrics
+Clear objective
+Understand and define the task unambiguously
+Specify criteria
+Relevance, creativity, accuracy, fluency, coherence, etc.
+Measurable outcomes
+Progress should be clearly measurable
+Systematic evaluation
+Review Relevant Metrics: BLEU, ROUGE, METEOR, etc.
+Task-Specific
+
+114 / 132
+
+Strategies for defining metrics
+Clear objective
+Understand and define the task unambiguously
+Specify criteria
+Relevance, creativity, accuracy, fluency, coherence, etc.
+Measurable outcomes
+Progress should be clearly measurable
+Systematic evaluation
+Review Relevant Metrics: BLEU, ROUGE, METEOR, etc.
+Task-Specific
+Automated evaluation
+
+115 / 132
+
+Strategies for defining metrics
+Clear objective
+Understand and define the task unambiguously
+Specify criteria
+Relevance, creativity, accuracy, fluency, coherence, etc.
+Measurable outcomes
+Progress should be clearly measurable
+Systematic evaluation
+Review Relevant Metrics: BLEU, ROUGE, METEOR, etc.
+Task-Specific
+Automated evaluation
+Iterative feedback!
+116 / 132
+
+Strategies for prompt candidates generation
+
+117 / 132
+
+Strategies for prompt candidates generation
+Field expertise + effective prompt generation strategies
+
+118 / 132
+
+Strategies for prompt candidates generation
+Field expertise + effective prompt generation strategies
+Meta prompts
+
+119 / 132
+
+Strategies for prompt candidates generation
+Field expertise + effective prompt generation strategies
+Meta prompts
+Prompt templates
+
+120 / 132
+
+Strategies for prompt candidates generation
+Field expertise + effective prompt generation strategies
+Meta prompts
+Prompt templates
+Tooling: guidance, langchain, lmql, dspy, marvin, outlines, etc.
+
+121 / 132
+
+Strategies for prompt candidates generation
+Field expertise + effective prompt generation strategies
+Meta prompts
+Prompt templates
+Tooling: guidance, langchain, lmql, dspy, marvin, outlines, etc.
+It's not about the tool!
+
+122 / 132
+
+Strategies for prompt candidates generation
+Field expertise + effective prompt generation strategies
+Meta prompts
+Prompt templates
+Tooling: guidance, langchain, lmql, dspy, marvin, outlines, etc.
+It's not about the tool!
+It's about design patterns and best practices!
+
+123 / 132
+
+Strategies for experimentation
+
+124 / 132
+
+Strategies for experimentation
+LLM specificity, domain knowledge, and iteration
+
+125 / 132
+
+Strategies for experimentation
+LLM specificity, domain knowledge, and iteration
+Trial and error with measurable outcomes
+
+126 / 132
+
+Strategies for experimentation
+LLM specificity, domain knowledge, and iteration
+Trial and error with measurable outcomes
+Systematic evaluation + iterative feedback
+
+127 / 132
+
+Demo - Text Summarization Use Case
+
+128 / 132
+
+Demo - Code Generation Use Case
+
+129 / 132
+
+Demo - Q&A - Prompting to Understand
+Papers
+
+130 / 132
+
+Demo - Designing Prompt Engineering
+Workflow
+
+131 / 132
+
+Summary
+Evolving the Prompt Engineering Template
+Task specification strategies
+Strategies for defining metrics
+Strategies for prompt candidates generation
+Strategies for experimentation
+
+132 / 132
+
+

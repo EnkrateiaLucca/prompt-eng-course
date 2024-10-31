@@ -35,7 +35,7 @@ python -m ipykernel install --user --name=prompt-eng-course
 ```
 mv .env.example ./.env
 ```
-
+Make sure to edit the file and include your `OPENAI_API_KEY`.
 
 ## Course Structure
 

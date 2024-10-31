@@ -10,3 +10,4 @@ pydantic
 anthropic
 jinja2
 pandas
+python-dotenv

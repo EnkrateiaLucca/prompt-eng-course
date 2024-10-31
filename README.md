@@ -23,12 +23,19 @@ conda activate prompt-eng-course
 pip install -r requirements/requirements.txt
 ```
 
-### Jupyter Notebook Setup
+4. Jupyter Notebook Setup
 
 To use this environment with Jupyter notebooks:
 ```bash
 python -m ipykernel install --user --name=prompt-eng-course
 ```
+
+5. Set up your .env file and add your `OPENAI_API_KEY`:
+
+```
+mv .env.example ./.env
+```
+
 
 ## Course Structure
 

@@ -39,7 +39,7 @@ Make sure to edit the file and include your `OPENAI_API_KEY`.
 
 ## Course Structure
 
-### Module 1: Introduction to Prompt Engineering
+### Chapter 1: Introduction to Prompt Engineering
 - Basic concepts and components
 - Understanding prompt structure
 - Components of prompts:
@@ -48,14 +48,14 @@ Make sure to edit the file and include your `OPENAI_API_KEY`.
   - Input data
   - Output indicators
 
-### Module 2: Prompt Engineering Framework
+### Chapter 2: Prompt Engineering Framework
 1. Define your task clearly
 2. Define evaluation metrics
 3. Generate candidate prompts
 4. Experiment and test
 5. Determine when to stop experimenting
 
-### Module 3: Practical Applications
+### Chapter 3: Practical Applications
 - Text summarization
 - Reference extraction
 - Question answering
@@ -65,20 +65,20 @@ Make sure to edit the file and include your `OPENAI_API_KEY`.
 
 The repository includes several Jupyter notebooks demonstrating various aspects of prompt engineering:
 
-### Module 1: Foundations
+### Chapter 1: Introduction to Prompt Engineering
 1. `demo-prompt-eng-intro.ipynb` - Introduction to prompt engineering basics with practical examples
 2. `1.0-intro-prompt-eng-prompt-basics.ipynb` - Core concepts of prompt engineering
 3. `1.1-simple-framework-for-building-prompts.ipynb` - Framework for building effective prompts
 4. `1.2-prototyping-prompts.ipynb` - Techniques for prototyping and iterating on prompts
 
-### Module 2: Advanced Techniques
+### Chapter 2: Prompt Engineering Framework
 1. `2.2-decomposing-problems-beyond-chain-of-thought.ipynb` - Breaking down complex problems
 2. `2.4-problem-solving-tree-of-thoughts.ipynb` - Tree of Thoughts approach for problem-solving
 3. `2.5-structured-prompting-openai-function-calling-pydantic.ipynb` - Structured prompting with OpenAI
 4. `2.6-retrieval-augmented-generation-qa-over-docs.ipynb` - RAG for question answering
 5. `2.7-prompt-engineering-frameworks.ipynb` - Overview of prompt engineering frameworks
 
-### Module 3: Use Cases
+### Chapter 3: Practical Applications
 1. `3.1-text-summarization-use-case.ipynb` - Text summarization examples and techniques
 2. `3.2-code-generation-use-case.ipynb` - Code generation examples
 3. `3.3-qa-prompting-to-understand-papers.ipynb` - Question-answering for research papers
